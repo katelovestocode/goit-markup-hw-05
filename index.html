@@ -66,7 +66,12 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button type="button" class="button">Заказать услугу</button>
+        <button type="button" class="button" data-modal-open>Заказать услугу</button>
+        <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close" data-modal-close></button>
+          </div>
+        </div>
       </section>
 
       <!-- Features-->
@@ -147,13 +152,31 @@
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="examples-list list">
             <li class="item">
-              <img src="./images/resized/box1.jpg" alt="Печатаем на клавиатуре" width="370" />
+              <img
+                src="./images/resized/box1.jpg"
+                alt="Печатаем на клавиатуре"
+                width="370"
+                class="examples-overlay"
+              />
+              <p class="examples-title">Десктопные приложения</p>
             </li>
             <li class="item">
-              <img src="./images/resized/box2.jpg" alt="Держим телефон" width="370" />
+              <img
+                src="./images/resized/box2.jpg"
+                alt="Держим телефон"
+                width="370"
+                class="examples-overlay"
+              />
+              <p class="examples-title">Мобильные приложения</p>
             </li>
             <li class="item">
-              <img src="./images/resized/box3.jpg" alt="Держим Ipad" width="370" />
+              <img
+                src="./images/resized/box3.jpg"
+                alt="Держим Ipad"
+                width="370"
+                class="examples-overlay"
+              />
+              <p class="examples-title">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -471,5 +494,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
